@@ -1,0 +1,16 @@
+Motor
+Copyright 2025 QDU-Robomaster
+
+This product includes software developed by QDU-Robomaster
+(https://github.com/QDU-Robomaster/Motor), licensed under the
+Apache License, Version 2.0.
+
+Modifications from the upstream version:
+
+- Removed the empty trailing `private:` section, which upstream keeps after the
+  last pure virtual function.
+- Zero-initialized the `Feedback` fields that upstream leaves uninitialized
+  (`error_id`, `position`, `velocity`, `omega`, `torque`, `temp`), so that a
+  default-constructed or partially filled feedback value is well defined.
+- Changed the Module id in the README from `QDU-Robomaster/Motor` to
+  `starpang888/Motor`.
